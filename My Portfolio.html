@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./My Portfolio_files/style.css">
+</head>
+<body style="
+    background: lightslategrey;
+">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html#">About</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Projects</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Contact</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">services</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">skills&gt;</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <section id="about"></section>
+        <h1>About Me</h1>
+        <p>Hi, I'm deeya patel, a web developer.</p>
+        <p>i want to introduce myself and my skills in a way that is clear,concise and catches,
+            and cathes the reader's attention. i am a web developer with years of experience 
+            in creating and managing websites my skills include coding in html,css and javascript
+            as well as working with cmss like.
+        </p>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: deeyapatel8378@gmail.com</p>
+    </section>
+    <section id="services">
+        <h2>services me</h2>
+        <p>The work involved in developing for the internet or an intranet web developement can 
+            range  from developing a simple single static page of plain text to complex web
+             application, electronic businesses and social network services network security and 
+             e-commerce development
+        </p>
+    </section>
+    <section id="skills">
+
+        <h2>skills me</h2>
+        <p>web developers are required to be proficient at coding with languages like html,css,
+            javascript for front-end development,and python,java,ruby,and php for back-and 
+            programming
+        </p>
+        <h3 class="greet-heading blue-text">web design</h3>
+            <p class="small-para">
+                web development refers to the creating,building,and maintaining of websites. it
+                include aspects such as web design,web publishing,web programming,and database 
+                management. it is the creation of an application that works over the internet  
+                i.e. websites.
+            </p>
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
